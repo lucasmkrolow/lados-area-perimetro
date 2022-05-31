@@ -5,29 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <title>Calculo dos lados pela área e perímetro</title>
-    <script>
-        function calcularLados() {
-            var area = parseFloat(document.getElementById("area").value);
-            var perimetro = parseFloat(document.getElementById("perimetro").value);
-            var base;
-            var altura;
-            var delta = perimetro * perimetro - 16 * area;
-            if (delta>0){
-                raiz1 = (perimetro + Math.sqrt(delta) )/4;
-                raiz2 = (perimetro - Math.sqrt(delta) )/4;
-
-            }
-            alert('O retângulo tem ' + raiz1.toFixed(2) + ' por ' + raiz2.toFixed(2));
-            }
-    </script>
-    <style>
-        body {
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
     <h3>Calcule as dimensões de um retângulo a partir da sua área e seu perímetro</h3>
